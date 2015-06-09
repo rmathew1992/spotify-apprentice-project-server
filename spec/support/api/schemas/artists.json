@@ -1,45 +1,42 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "http://spotify-apprentice-app.com",
-  "type": "array",
-  "items": [
-    {
-      "id": "http://spotify-apprentice-app.com/0",
-      "type": "object",
-      "properties": {
-        "id": {
-          "id": "http://spotify-apprentice-app.com/0/id",
-          "type": "string"
+  "type": "object",
+  "properties": {
+    "artists": {
+      "id": "http://spotify-apprentice-app.com/artists",
+      "type": "array",
+      "items": {
+        "id": "http://spotify-apprentice-app.com/artists/0",
+        "type": "object",
+        "properties": {
+          "id": {
+            "id": "http://spotify-apprentice-app.com/artists/0/id",
+            "type": "string"
+          },
+          "name": {
+            "id": "http://spotify-apprentice-app.com/artists/0/name",
+            "type": "string"
+          },
+          "description": {
+            "id": "http://spotify-apprentice-app.com/artists/0/description",
+            "type": "string"
+          },
+          "spotify_uri": {
+            "id": "http://spotify-apprentice-app.com/artists/0/spotify_uri",
+            "type": "string"
+          }
         },
-        "created_at": {
-          "id": "http://spotify-apprentice-app.com/0/created_at",
-          "type": "string"
-        },
-        "updated_at": {
-          "id": "http://spotify-apprentice-app.com/0/updated_at",
-          "type": "string"
-        },
-        "name": {
-          "id": "http://spotify-apprentice-app.com/0/name",
-          "type": "string"
-        },
-        "description": {
-          "id": "http://spotify-apprentice-app.com/0/description",
-          "type": "string"
-        },
-        "spotify_uri": {
-          "id": "http://spotify-apprentice-app.com/0/spotify_uri",
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "created_at",
-        "updated_at",
-        "name",
-        "description",
-        "spotify_uri"
-      ]
+        "required": [
+          "id",
+          "name",
+          "description",
+          "spotify_uri"
+        ]
+      }
     }
+  },
+  "required": [
+    "artists"
   ]
 }
