@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'songs endpoints' do
   describe 'GET /songs' do
     it 'returns JSON for all songs' do
-      songs = create_list(:songs, 3)
+      songs = create_list(:song, 3)
 
       get(songs_url, {}, accept_headers)
 
