@@ -1,7 +1,7 @@
 module Helpers
   module Requests
     def json
-      @json ||= parse_json(response.body)
+      @json ||= JSON.parse(response.body)
     end
 
     def errors
@@ -13,7 +13,7 @@ module Helpers
     end
 
     def accept_header
-      "application/vnd.spotify-apprentice-app.com+json; version=#{api_version}"
+      "application/vnd.spotify-apprentice-app.com; version=#{api_version}"
     end
 
     def accept_headers
