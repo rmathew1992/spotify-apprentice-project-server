@@ -1,0 +1,12 @@
+{
+  "songs": [
+    {
+      "id": "870fd74a-908a-4705-8d98-2677df49ea0d",
+      "name": "Michael",
+      "artist": "Jackson",
+      "spotify_uri": "safdsf",
+      "created_at": "2015-06-09T21:28:54Z",
+      "updated_at": "2015-06-09T21:28:54Z"
+    }
+  ]
+}
