@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20150609193512) do
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
-  create_table "songs", force: :cascade do |t|
+  create_table "songs", id: :uuid, default: "uuid_generate_v4()", force: :cascade do |t|
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "name"
