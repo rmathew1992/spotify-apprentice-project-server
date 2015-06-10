@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150609174024) do
+ActiveRecord::Schema.define(version: 20150609193512) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,5 +42,15 @@ ActiveRecord::Schema.define(version: 20150609174024) do
   end
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
+
+  create_table "songs", force: :cascade do |t|
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "name"
+    t.string   "artist"
+    t.string   "spotify_uri"
+  end
+
+  add_index "songs", ["spotify_uri"], name: "index_songs_on_spotify_uri", unique: true, using: :btree
 
 end
