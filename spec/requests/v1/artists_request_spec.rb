@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'artists endpoints' do
   describe 'GET /artists' do
     it 'returns JSON for all artists' do
-      artists = create_list(:artist, 3)
+      artists = create_list(:artist, 1)
 
       get(artists_url, {}, accept_headers)
 binding.pry

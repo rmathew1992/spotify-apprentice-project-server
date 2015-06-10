@@ -4,5 +4,4 @@ FactoryGirl.define do
     artist 'Michael Jackson'
     spotify_uri { SecureRandom.hex(10) }
   end
-
 end
