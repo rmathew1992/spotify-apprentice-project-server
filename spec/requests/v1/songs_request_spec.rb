@@ -13,10 +13,7 @@ describe 'songs endpoints' do
 end
 
 describe 'song endpoint' do
-  describe 'GET /song' do
-    it 'goes to the correct endpoint' do
-      assert_generates '/songs/1', { controller: 'v1/songs', action: 'show', id: '1' }
-    end
+  describe 'GET /songs/:id' do
 
     it 'returns JSON for a single song' do
       song = create(:song)
