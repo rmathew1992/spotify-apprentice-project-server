@@ -6,5 +6,6 @@ describe Artist do
     it { should have_many :songs}
     it { should validate_presence_of :spotify_uri }
     it { should validate_uniqueness_of :spotify_uri }
+    it {should validate_presence_of :song_count}
   end
 end
