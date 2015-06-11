@@ -25,13 +25,19 @@
           "spotify_uri": {
             "id": "http://spotify-apprentice-app.com/artists/0/spotify_uri",
             "type": "string"
+          },
+          "songs": {
+            "id": "http://spotify-apprentice-app.com/artists/0/songs",
+            "type": "array",
+            "items": []
           }
         },
         "required": [
           "id",
           "name",
           "description",
-          "spotify_uri"
+          "spotify_uri",
+          "songs"
         ]
       }
     }
