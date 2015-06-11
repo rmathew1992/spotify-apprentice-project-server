@@ -22,15 +22,39 @@
             "spotify_uri": {
               "id": "http://spotify-apprentice-app.com/songs/0/spotify_uri",
               "type": "string"
+            },
+            "artist": {
+              "id": "http://spotify-apprentice-app.com/songs/0/artist",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "id": "http://spotify-apprentice-app.com/songs/0/artist/id",
+                  "type": "string"
+                },
+                "name": {
+                  "id": "http://spotify-apprentice-app.com/songs/0/artist/name",
+                  "type": "string"
+                },
+                "description": {
+                  "id": "http://spotify-apprentice-app.com/songs/0/artist/description",
+                  "type": "string"
+                },
+                "spotify_uri": {
+                  "id": "http://spotify-apprentice-app.com/songs/0/artist/spotify_uri",
+                  "type": "string"
+                }
+              }
             }
           },
           "required": [
             "id",
             "name",
-            "spotify_uri"
+            "spotify_uri",
+            "artist"
           ]
         }
       ]
+
     }
   },
   "required": [
