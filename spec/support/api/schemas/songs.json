@@ -1,52 +1,60 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://jsonschema.net",
+  "id": "http://spotify-apprentice-app.com",
   "type": "object",
   "properties": {
     "songs": {
-      "id": "http://jsonschema.net/songs",
+      "id": "http://spotify-apprentice-app.com/songs",
       "type": "array",
-      "items": {
-        "id": "http://jsonschema.net/songs/0",
-        "type": "object",
-        "properties": {
-          "id": {
-            "id": "http://jsonschema.net/songs/0/id",
-            "type": "string"
+      "items": [
+        {
+          "id": "http://spotify-apprentice-app.com/songs/0",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "http://spotify-apprentice-app.com/songs/0/id",
+              "type": "string"
+            },
+            "name": {
+              "id": "http://spotify-apprentice-app.com/songs/0/name",
+              "type": "string"
+            },
+            "spotify_uri": {
+              "id": "http://spotify-apprentice-app.com/songs/0/spotify_uri",
+              "type": "string"
+            },
+            "artist": {
+              "id": "http://spotify-apprentice-app.com/songs/0/artist",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "id": "http://spotify-apprentice-app.com/songs/0/artist/id",
+                  "type": "string"
+                },
+                "name": {
+                  "id": "http://spotify-apprentice-app.com/songs/0/artist/name",
+                  "type": "string"
+                },
+                "description": {
+                  "id": "http://spotify-apprentice-app.com/songs/0/artist/description",
+                  "type": "string"
+                },
+                "spotify_uri": {
+                  "id": "http://spotify-apprentice-app.com/songs/0/artist/spotify_uri",
+                  "type": "string"
+                }
+              }
+            }
           },
-          "name": {
-            "id": "http://jsonschema.net/songs/0/name",
-            "type": "string"
-          },
-          "artist": {
-            "id": "http://jsonschema.net/songs/0/artist",
-            "type": "string"
-          },
-          "spotify_uri": {
-            "id": "http://jsonschema.net/songs/0/spotify_uri",
-            "type": "string"
-          },
-          "created_at": {
-            "id": "http://jsonschema.net/songs/0/created_at",
-            "type": "string"
-          },
-          "updated_at": {
-            "id": "http://jsonschema.net/songs/0/updated_at",
-            "type": "string"
-          }
-        },
-        "required": [
-          "id",
-          "name",
-          "artist",
-          "spotify_uri",
-          "created_at",
-          "updated_at"
-        ]
-      },
-      "required": [
-        "0"
+          "required": [
+            "id",
+            "name",
+            "spotify_uri",
+            "artist"
+          ]
+        }
       ]
+
     }
   },
   "required": [
