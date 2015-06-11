@@ -1,7 +1,7 @@
 class CreateSongs < ActiveRecord::Migration
   def change
 
-    create_table :songs do |t|
+    create_table :songs, id: :uuid do |t|
       t.timestamps null: false
       t.string :name
       t.string :artist
