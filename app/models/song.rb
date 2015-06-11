@@ -4,4 +4,5 @@ class Song < ActiveRecord::Base
   validates :artist_id, presence: true
 
   belongs_to :artist
+  counter_culture :artist, touch: :true
 end
