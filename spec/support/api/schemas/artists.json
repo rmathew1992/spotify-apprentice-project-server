@@ -1,30 +1,30 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://jsonschema.net",
+  "id": "http://spotify-apprentice-app.com",
   "type": "object",
   "properties": {
     "songs": {
-      "id": "http://jsonschema.net/songs",
+      "id": "http://spotify-apprentice-app.com/songs",
       "type": "array",
       "items": [
         {
-          "id": "http://jsonschema.net/songs/0",
+          "id": "http://spotify-apprentice-app.com/songs/0",
           "type": "object",
           "properties": {
             "id": {
-              "id": "http://jsonschema.net/songs/0/id",
+              "id": "http://spotify-apprentice-app.com/songs/0/id",
               "type": "string"
             },
             "name": {
-              "id": "http://jsonschema.net/songs/0/name",
+              "id": "http://spotify-apprentice-app.com/songs/0/name",
               "type": "string"
             },
             "spotify_uri": {
-              "id": "http://jsonschema.net/songs/0/spotify_uri",
+              "id": "http://spotify-apprentice-app.com/songs/0/spotify_uri",
               "type": "string"
             },
             "artist_id": {
-              "id": "http://jsonschema.net/songs/0/artist_id",
+              "id": "http://spotify-apprentice-app.com/songs/0/artist_id",
               "type": "string"
             }
           },
@@ -38,42 +38,34 @@
       ]
     },
     "artists": {
-      "id": "http://jsonschema.net/artists",
+      "id": "http://spotify-apprentice-app.com/artists",
       "type": "array",
       "items": {
-        "id": "http://jsonschema.net/artists/0",
+        "id": "http://spotify-apprentice-app.com/artists/0",
         "type": "object",
         "properties": {
           "id": {
-            "id": "http://jsonschema.net/artists/0/id",
+            "id": "http://spotify-apprentice-app.com/artists/0/id",
             "type": "string"
           },
           "name": {
-            "id": "http://jsonschema.net/artists/0/name",
+            "id": "http://spotify-apprentice-app.com/artists/0/name",
             "type": "string"
           },
           "description": {
-            "id": "http://jsonschema.net/artists/0/description",
+            "id": "http://spotify-apprentice-app.com/artists/0/description",
             "type": "string"
           },
           "spotify_uri": {
-            "id": "http://jsonschema.net/artists/0/spotify_uri",
+            "id": "http://spotify-apprentice-app.com/artists/0/spotify_uri",
             "type": "string"
           },
           "song_ids": {
-            "id": "http://jsonschema.net/artists/0/song_ids",
+            "id": "http://spotify-apprentice-app.com/artists/0/song_ids",
             "type": "array",
             "items": [
               {
-                "id": "http://jsonschema.net/artists/0/song_ids/0",
-                "type": "string"
-              },
-              {
-                "id": "http://jsonschema.net/artists/0/song_ids/1",
-                "type": "string"
-              },
-              {
-                "id": "http://jsonschema.net/artists/0/song_ids/2",
+                "id": "http://spotify-apprentice-app.com/artists/0/song_ids/0",
                 "type": "string"
               }
             ]
