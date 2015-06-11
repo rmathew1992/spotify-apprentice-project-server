@@ -7,7 +7,6 @@ describe 'artists endpoints' do
       songs = create_list(:song, 3, artist: artists)
 
       get(artists_url, {}, accept_headers)
-      binding.pry
       expect(response).to have_http_status :ok
       expect(response).to match_response_schema :artists
     end
