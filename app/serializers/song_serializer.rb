@@ -1,5 +1,5 @@
 class SongSerializer < ActiveModel::Serializer
-  has_one :artist, embed: :ids
+  has_one :artist
 
   attributes :id, :name, :spotify_uri, :popularity
   embed :ids
