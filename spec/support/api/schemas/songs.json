@@ -27,6 +27,10 @@
               "id": "http://spotify-apprentice-app.com/artists/0/spotify_uri",
               "type": "string"
             },
+            "songs_count": {
+              "id": "http://spotify-apprentice-app.com/artists/0/songs_count",
+              "type": "integer"
+            },
             "song_ids": {
               "id": "http://spotify-apprentice-app.com/artists/0/song_ids",
               "type": "array",
@@ -41,6 +45,7 @@
             "name",
             "description",
             "spotify_uri",
+            "songs_count",
             "song_ids"
           ]
         }
@@ -51,23 +56,23 @@
       "type": "array",
       "items": [
         {
-          "id": "http://spotify-apprentice-app.com/songs/2",
+          "id": "http://spotify-apprentice-app.com/songs/0",
           "type": "object",
           "properties": {
             "id": {
-              "id": "http://spotify-apprentice-app.com/songs/2/id",
+              "id": "http://spotify-apprentice-app.com/songs/0/id",
               "type": "string"
             },
             "name": {
-              "id": "http://spotify-apprentice-app.com/songs/2/name",
+              "id": "http://spotify-apprentice-app.com/songs/0/name",
               "type": "string"
             },
             "spotify_uri": {
-              "id": "http://spotify-apprentice-app.com/songs/2/spotify_uri",
+              "id": "http://spotify-apprentice-app.com/songs/0/spotify_uri",
               "type": "string"
             },
             "artist_id": {
-              "id": "http://spotify-apprentice-app.com/songs/2/artist_id",
+              "id": "http://spotify-apprentice-app.com/songs/0/artist_id",
               "type": "string"
             }
           }
