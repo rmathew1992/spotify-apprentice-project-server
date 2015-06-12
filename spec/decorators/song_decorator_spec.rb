@@ -8,7 +8,7 @@ describe SongDecorator do
                       plays: 3001
         decorated = SongDecorator.new(song)
 
-        expect(decorated.popularity).to eq '3001 plays, this song is popular'
+        expect(decorated.popularity).to eq 'Dirty Diana has 3001 plays, it is popular'
       end
     end
 
