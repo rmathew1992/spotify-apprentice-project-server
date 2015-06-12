@@ -60,6 +60,10 @@
             "id": "http://spotify-apprentice-app.com/artists/0/spotify_uri",
             "type": "string"
           },
+          "songs_count": {
+            "id": "http://spotify-apprentice-app.com/artists/0/songs_count",
+            "type": "integer"
+          },
           "song_ids": {
             "id": "http://spotify-apprentice-app.com/artists/0/song_ids",
             "type": "array",
