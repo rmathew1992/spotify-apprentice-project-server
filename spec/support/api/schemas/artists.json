@@ -25,7 +25,7 @@
             },
             "popularity": {
               "id": "http://spotify-apprentice-app.com/songs/0/popularity",
-              "type": "null"
+              "type": "string"
             },
             "artist_id": {
               "id": "http://spotify-apprentice-app.com/songs/0/artist_id",
@@ -75,6 +75,14 @@
             "items": [
               {
                 "id": "http://spotify-apprentice-app.com/artists/0/song_ids/0",
+                "type": "string"
+              },
+              {
+                "id": "http://spotify-apprentice-app.com/artists/0/song_ids/1",
+                "type": "string"
+              },
+              {
+                "id": "http://spotify-apprentice-app.com/artists/0/song_ids/2",
                 "type": "string"
               }
             ]

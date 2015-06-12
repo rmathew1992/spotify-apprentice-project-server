@@ -67,7 +67,7 @@
         },
         "popularity": {
           "id": "http://spotify-apprentice-app.com/song/popularity",
-          "type": "null"
+          "type": "string"
         },
         "artist_id": {
           "id": "http://spotify-apprentice-app.com/song/artist_id",

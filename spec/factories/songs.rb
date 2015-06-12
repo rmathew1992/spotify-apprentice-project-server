@@ -3,6 +3,6 @@ FactoryGirl.define do
     name 'Dirty Diana'
     artist
     spotify_uri { SecureRandom.hex(10) }
-    plays 3
+    plays 3001
   end
 end
