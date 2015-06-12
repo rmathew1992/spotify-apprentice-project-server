@@ -1,11 +1,11 @@
 class SongSerializer < ActiveModel::Serializer
   has_one :artist
 
-  attributes :id, :name, :spotify_uri, :popularity
+  attributes :id, :name, :spotify_uri, :message
   embed :ids
 
-  def popularity
-    decorated_song.popularity
+  def message
+    decorated_song.message
   end
 
   def decorated_song

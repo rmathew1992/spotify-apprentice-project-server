@@ -71,8 +71,8 @@
               "id": "http://spotify-apprentice-app.com/songs/0/spotify_uri",
               "type": "string"
             },
-            "popularity": {
-              "id": "http://spotify-apprentice-app.com/songs/0/popularity",
+            "message": {
+              "id": "http://spotify-apprentice-app.com/songs/0/message",
               "type": "string"
             },
             "artist_id": {
