@@ -50,7 +50,6 @@ ActiveRecord::Schema.define(version: 20150611203507) do
     t.string   "name"
     t.string   "spotify_uri"
     t.uuid     "artist_id"
-    t.integer  "popularity"
     t.integer  "plays",       default: 0
   end
 
