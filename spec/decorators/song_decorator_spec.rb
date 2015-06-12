@@ -11,7 +11,5 @@ describe SongDecorator do
         expect(decorated.popularity).to eq 'Dirty Diana has 3001 plays, it is popular'
       end
     end
-
   end
-
 end

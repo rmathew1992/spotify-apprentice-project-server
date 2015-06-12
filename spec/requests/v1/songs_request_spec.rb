@@ -14,7 +14,6 @@ end
 
 describe 'song endpoint' do
   describe 'GET /songs/:id' do
-
     it 'returns JSON for a single song' do
       song = create(:song)
 
