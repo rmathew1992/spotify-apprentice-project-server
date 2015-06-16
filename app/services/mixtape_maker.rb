@@ -6,7 +6,7 @@ class MixtapeMaker
 
   def generate(number_of_songs = 5, artist_ids:)
     if artist_ids.blank?
-      Song.limit(number_of_songs).order('RANDOM()')
+      Song.order('RANDOM()').limit(number_of_songs)
     else
       Song.where(artist: artist_ids).order('RANDOM()').limit(number_of_songs)
     end
