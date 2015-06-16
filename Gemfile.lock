@@ -268,6 +268,8 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    validates_overlap (0.5.1)
+      rails (>= 3.0.0)
     versionist (1.4.1)
       activesupport (>= 3)
       railties (>= 3)
@@ -332,6 +334,7 @@ DEPENDENCIES
   title
   uglifier
   unicorn
+  validates_overlap
   versionist
   web-console
   webmock

@@ -28,6 +28,7 @@ gem 'simple_form'
 gem 'title'
 gem 'uglifier'
 gem 'unicorn'
+gem 'validates_overlap'
 gem 'versionist'
 
 
