@@ -65,6 +65,10 @@
           "id": "http://spotify-apprentice-app.com/song/spotify_uri",
           "type": "string"
         },
+        "message": {
+          "id": "http://spotify-apprentice-app.com/song/message",
+          "type": "string"
+        },
         "artist_id": {
           "id": "http://spotify-apprentice-app.com/song/artist_id",
           "type": "string"

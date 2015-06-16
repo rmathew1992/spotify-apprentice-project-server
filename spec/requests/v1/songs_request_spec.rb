@@ -14,9 +14,8 @@ end
 
 describe 'song endpoint' do
   describe 'GET /songs/:id' do
-
     it 'returns JSON for a single song' do
-      song = create(:song)
+      song = create :song
 
       get(song_url(song), {}, accept_headers)
       expect(response).to have_http_status :ok

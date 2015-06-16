@@ -1,5 +1,4 @@
 class V1::SongsController < ApplicationController
-
   def index
     songs = Song.all
 
@@ -11,5 +10,4 @@ class V1::SongsController < ApplicationController
 
     render json: song, include: [:artist]
   end
-
 end

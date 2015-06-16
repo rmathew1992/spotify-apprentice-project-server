@@ -7,7 +7,9 @@ gem 'airbrake'
 gem 'autoprefixer-rails'
 gem 'bourbon', '~> 4.2.0'
 gem 'coffee-rails', '~> 4.1.0'
+gem 'counter_culture', '~> 0.1.23'
 gem 'delayed_job_active_record'
+gem 'draper', '~>1.3'
 gem 'email_validator'
 gem 'flutie'
 gem 'high_voltage'
@@ -27,7 +29,7 @@ gem 'title'
 gem 'uglifier'
 gem 'unicorn'
 gem 'versionist'
-gem 'counter_culture', '~> 0.1.23'
+
 
 group :development do
   gem 'spring'

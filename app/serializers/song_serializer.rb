@@ -1,6 +1,14 @@
 class SongSerializer < ActiveModel::Serializer
-  embed :ids
-  attributes :id, :name, :spotify_uri
+  has_one :artist
 
-  has_one :artist, embed: :ids
+  attributes :id, :name, :spotify_uri, :message
+  embed :ids
+
+  def message
+    decorated_song.message
+  end
+
+  def decorated_song
+    @decorated_song ||= object.decorate
+  end
 end
