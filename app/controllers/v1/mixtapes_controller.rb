@@ -1,14 +1,11 @@
-class V1::MixtapesController < V1::ApplicationController
-
+class V1::MixtapesController < ApplicationController
   def index
 
   end
 
-  def create()
-    mixtape = MixtapeMaker.generate(params[:no_song], artists: params[:artist])
+  def create
+    mixtape = MixtapeMaker.generate(params[:number_of_songs], artists: params[:artist])
     render json: mixtape
   end
 
 end
-
-

@@ -1,14 +1,14 @@
 class MixtapeMaker
 
-  def self.generate(no_song = 5, artists:)
-    new.generate(no_song, artists: artists)
+  def self.generate(number_of_songs = 5, artists:)
+    new.generate(number_of_songs, artists: artists)
   end
 
-  def generate(no_song = 5, artists:)
+  def generate(number_of_songs = 5, artists:)
     if artists.blank?
-      Song.limit(no_song).order("RANDOM()")
+      Song.limit(number_of_songs).order('RANDOM()')
     else
-        Song.where(artist: artists[:id]).limit(no_song).order("RANDOM()")
+      Song.where(artist: artists[:id]).order('RANDOM()').limit(number_of_songs)
     end
   end
 

@@ -6,7 +6,7 @@ describe 'mixtape endpoints' do
       artist = create(:artist)
       songs = create_list(:song, 5, artist: artist)
 
-      post(mixtapes_url, {no_song: 4,artist: artist}.to_json , accept_headers)
+      post(mixtapes_url, { number_of_songs: 4, artist: artist }.to_json, accept_headers)
       expect(response).to have_http_status :ok
       expect(response).to match_response_schema :mixtape
     end
