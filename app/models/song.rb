@@ -5,7 +5,7 @@ class Song < ActiveRecord::Base
   validates :spotify_uri, presence: true, uniqueness: true
   validates :artist_id, presence: true
   validates :plays, presence: true
-  validates 'created_at', 'updated_at', overlap: {}
+  validates :play_start, :play_end, overlap: {}
 
   counter_culture :artist, touch: :true
 end
