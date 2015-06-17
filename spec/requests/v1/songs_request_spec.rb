@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'date'
 
 describe 'songs endpoints' do
   describe 'GET /songs' do
@@ -9,6 +10,7 @@ describe 'songs endpoints' do
       expect(response).to have_http_status :ok
       expect(response).to match_response_schema :songs
     end
+
   end
 end
 

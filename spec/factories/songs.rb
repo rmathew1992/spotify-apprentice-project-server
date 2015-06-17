@@ -3,6 +3,8 @@ FactoryGirl.define do
     name 'Dirty Diana'
     artist
     spotify_uri { SecureRandom.hex(10) }
+    play_start { DateTime.current() }
+    play_end { DateTime.current() }
     plays 3001
 
     trait :popular do
