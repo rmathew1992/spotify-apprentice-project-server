@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150611203507) do
+ActiveRecord::Schema.define(version: 20150616204620) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,8 @@ ActiveRecord::Schema.define(version: 20150611203507) do
     t.string   "spotify_uri"
     t.uuid     "artist_id"
     t.integer  "plays",       default: 0
+    t.datetime "play_start"
+    t.datetime "play_end"
   end
 
   add_index "songs", ["artist_id"], name: "index_songs_on_artist_id", using: :btree
